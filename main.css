@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+main{
+  background-image: url(images/main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header{
+  padding-bottom: 1%;
+}
+
+a {
+    position: relative;
+    font-size: 2em;
+    color: rgba(65, 105, 225, 0);
+    font-weight: 800;
+    text-decoration: underline;
+    overflow: hidden;
+  }
+
+a::before {
+    position: absolute;
+    content: attr(data-content);
+    color: rgb(44, 200, 228);
+    text-decoration: underline;
+    overflow: hidden;
+    transition: width 275ms ease;
+  }
+
+  a::before {
+    width: 0;
+    white-space: nowrap;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+.home{
+    display: flex;
+} 
+
+.container{
+    display: flex;
+
+    width: 100%;
+
+    padding-top: 170px;
+    padding-left: 133px;
+    padding-bottom: 260px;
+    
+    background-image: url(images/head.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title{
+    display: flex;
+}
+
+.title {
+  position: fixed;   top: 0;   left: 0;   z-index: 9999; margin-top: 1%; background-color: #27272736; height: 5%; width: 100%; padding-left: 550px; padding-top: 5px;
+}
+
+.title2{
+    display: flex;
+}
+
+/* _________________HOME___________________ */
+
+.titleText{
+    margin-bottom: 61px;
+    margin-right: 75px;
+
+    font-size: 44px;
+    font-weight: 300;
+
+    line-height: 45px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-subtitle{
+    font-weight: 300;
+    font-size: 250px;
+    
+    line-height: 230px;
+
+    margin-bottom: 61px;
+}
+
+.header-description{
+    font-weight: 300;
+    font-size: 32px;
+
+    line-height: 45px;
+
+    margin-bottom: 61px;
+}
+
+/* _________________MAIN___________________ */
+.about-title{
+    font-weight: 300;
+    font-size: 56px;
+    
+    line-height: 150px;
+    
+    text-align: center;
+}
+
+.about-description-title{
+    display: flex;
+    margin-left: 7%;
+}
+
+.about-description{
+    font-weight: 300;
+    font-size: 25px;
+    font-weight:bold;
+    color: white;
+
+    padding-left: 7%;
+    margin-right: 15%;
+    line-height: 45px;
+
+    margin-bottom: 61px;
+
+    background-color: #272727b2;
+
+    border-radius: 5%;
+}
+
+.mainIMG{
+    height: 80%;
+    width: 80%;
+}
+
+.about-staff{
+    font-weight: 300;
+    font-size: 56px;
+    
+    line-height: 150px;
+    
+    text-align: center;
+}
+
+.staff{
+    margin-bottom: 25px;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
+
+.staff .slide{
+    border-radius: .5rem;
+    text-align: center; 
+    padding:2rem;
+    user-select: none;
+ }
+
+.staff .slide img{
+    height: 50%;
+    width: 50%;
+    border-radius: 5%;
+ }
+ 
+.staff .slide h3{
+    margin:1.5rem 0;
+    font-size: 2rem;
+    color:var(--white);
+ }
+ 
+.staff .slide p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color:var(--light-white);
+ }
+
+/* ________________FOOTER__________________ */
+.contact-description-title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    font-weight: 400;
+}
+
+  .contact-newsletter form {
+    margin: 1rem auto;
+    max-width: 60rem;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .contact-newsletter form .contact-link-btn {
+    margin-top: 0;
+  }
+  
+  .contact-newsletter form .contact-email {
+    width: 100%;
+    padding: 0 1.4rem;
+    font-size: 1.6rem;
+  }
+
+  .link{
+    text-align: center;
+  }
+
+  .vk{
+    height: 2%;
+    width: 2%;
+    margin-left: 10px;
+    border-radius: 5%;
+  }
+
+  .telegram{
+    height: 2%;
+    width: 2%;
+    margin-left: 10px;
+    border-radius: 5%;
+  }
+
+  .instagram{
+    height: 2%;
+    width: 2%;
+    margin-left: 20px;
+    border-radius: 5%;
+  }
+
+ footer{
+    background-color: #96d4e7;
+ }
